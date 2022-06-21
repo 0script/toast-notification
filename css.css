@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Koulen&family=Lato:wght@100&family=Lobster&family=Poppins:wght@400&family=Roboto:wght@100&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rebeccapurple;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+button.btn{
+	background-color: #fff;
+	color: rebeccapurple;
+	font-family: inherit;
+	font-weight: bold;
+	padding: 1rem;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+button.btn:focus{
+	outline: none;
+}
+
+button.btn:active{
+	transform: scale(80%);
+}
+
+div#toasts{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+div.toast{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 1rem 2rem;
+	margin: 0.5rem;
+	transition: all 0.4s ease-in-out;
+}
